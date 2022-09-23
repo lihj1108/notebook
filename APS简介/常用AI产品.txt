@@ -1,0 +1,19 @@
+产品：
+google cloud platform：： https://console.cloud.google.com/
+华为云：：ModelArts：：https://console.huaweicloud.com/modelarts
+	计算机视觉套件：：图像识别、目标检测、实例分割、语义分割、交互式数据标注（极点标注、多边形标注）
+	自然语言处理套件：：文本分类、实体抽取
+百度：：飞浆EasyDL：：https://ai.baidu.com/easydl
+	图像和视频：图像分类、物体检测、图像分割、视频分类、目标跟踪、图文匹配、OCR
+	文本：文本分类、文本相似度、文本创作、文本实体抽取、文本实体关系抽取、情感倾向分析、评论观点抽取
+	音频：语音识别、声音分类、语音合成
+框架：
+pytorch：：fackbook
+tensorflow（Keras）：：google
+mxnet：：亚马逊
+caffe：：加州大学伯克利分校
+CNTK：：微软
+chainer：：日本风险公司Preferred Networks与IBM，英特尔，微软，Nvidia合作开发
+jittor（计图）：：清华大学图形实验室
+mindspore（昇思）：：华为
+paddlepaddle（双桨）：：百度
