@@ -114,7 +114,7 @@ bilateralFilter()  双边过滤，在保留边缘的同时进行图像平滑
 
 ##### 5.Morphological Transformations  形态变换
 
-erode()  侵蚀，让边缘变窄
+erode()  腐蚀，让边缘变窄
 
 dilate()  膨胀，让边缘变厚
 

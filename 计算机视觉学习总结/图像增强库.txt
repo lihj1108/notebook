@@ -1,4 +1,0 @@
-imgaug
-albumentations
-PIL(Pillow)
-cv2(opencv)
