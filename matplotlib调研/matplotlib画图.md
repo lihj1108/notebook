@@ -10,13 +10,12 @@
 
 #### 2.1 子图
 
-
-
 ```python
 from matplotlib import pyplot as plt
 import matplotlib
 
-matplotlib.rcParams['font.sans-serif']=['SimHei'] # 正常显示中文
+matplotlib.rcParams['font.sans-serif']=['SimHei'] # 正常显示中文 windows
+# matplotlib.rcParams['font.sans-serif']= ['Heiti TC']  # 正常显示中文 mac
 matplotlib.rcParams['axes.unicode_minus']=False # 正常显示负号
 
 names = ['group_a', 'group_b', 'group_c']
@@ -50,4 +49,9 @@ plt.show() # 将figure渲染到canvas上，显示图形。
 ```
 
 ![](test.jpg)
+
+```python
+plt.legend() # 显示图例
+plt.grid() # 显示网格
+```
 
