@@ -1,4 +1,4 @@
-#### ALBEF
+## ALBEF
 
 （Align before Fuse: Vision and Language Representation Learning with Momentum Distillation））
 
@@ -14,7 +14,7 @@ paper：https://arxiv.org/pdf/2107.07651.pdf
 
 #### 2.目标函数
 
-ALBEF预训练包含3各目标：
+ALBEF预训练包含3个目标：
 
 1.图像-文本对比学习image-text contrastive learning (ITC) ，学习输入图像文本对的相似关系
 
