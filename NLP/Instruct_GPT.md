@@ -14,9 +14,7 @@ Instruct gpt的训练方式和chatgpt相同，训练步骤如下图所示：
 
 - SFT：这一步的训练和GPT-3一致，而且作者发现让模型适当过拟合有助于后面两步的训练
 
-- RM：
-
-- 因为训练RM的数据是一个labeler根据生成结果排序的形式，所以它可以看做一个回归模型。RM结构是将SFT训练后的模型的最后的嵌入层去掉后的模型。它的输入是prompt和Reponse，输出是奖励值。具体的讲，对弈每个prompt，InstructGPT/ChatGPT会随机生成k个输出（ 4≤k≤9 ），然后它们向每个labeler成对的展示输出结果，也就是每个prompt共展示k(k-1)个结果，然后用户从中选择效果更好的输出。在训练时，InstructGPT/ChatGPT将每个prompt的k(k-1)个响应对作为一个batch，这种按prompt为batch的训练方式要比传统的按样本为batch的方式更不容易过拟合，因为这种方式每个prompt会且仅会输入到模型中一次。奖励模型的损失函数如下，这个损失函数的目标是最大化labeler更喜欢的响应和不喜欢的响应之间的差值:
+- RM：因为训练RM的数据是一个labeler根据生成结果排序的形式，所以它可以看做一个回归模型。RM结构是将SFT训练后的模型的最后的嵌入层去掉后的模型。它的输入是prompt和Reponse，输出是奖励值。具体的讲，对弈每个prompt，InstructGPT/ChatGPT会随机生成k个输出（ 4≤k≤9 ），然后它们向每个labeler成对的展示输出结果，也就是每个prompt共展示k(k-1)个结果，然后用户从中选择效果更好的输出。在训练时，InstructGPT/ChatGPT将每个prompt的k(k-1)个响应对作为一个batch，这种按prompt为batch的训练方式要比传统的按样本为batch的方式更不容易过拟合，因为这种方式每个prompt会且仅会输入到模型中一次。奖励模型的损失函数如下，这个损失函数的目标是最大化labeler更喜欢的响应和不喜欢的响应之间的差值:
 
   ![](image/rm_loss.png)
 
