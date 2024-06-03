@@ -4,7 +4,7 @@ paper：https://arxiv.org/pdf/2305.06500.pdf
 
 github：https://github.com/salesforce/LAVIS/tree/main/projects/instructblip
 
-InstructBlip是一种视觉语言指令调优（ vision-language instruction tuning）框架，复用了BLIP2的结构，有一个imag encoder，一个LLM，一个QFormer连接前两者。在进行视觉语言指令微调期间，我们从预训练的BLIP-2检查点初始化模型，并且只微调Q-Former的参数，同时保持图像编码器和LLM冻结
+InstructBlip是一种视觉语言指令调优（ vision-language instruction tuning）框架，复用了BLIP2的结构，有一个imag encoder，一个LLM，一个QFormer连接前两者。在进行视觉语言指令微调期间，我们从预训练的BLIP2的checkpoint初始化模型，并且只微调Q-Former的参数，同时保持图像编码器和LLM冻结
 
 #### 1.模型结构
 
